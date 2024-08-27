@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+}
+body
+{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+}
+.fluid,#fluid
+{
+    width:100%;
+    background-color: rgb(194, 241, 21);
+}
+.box,#box
+{
+    width:80%;
+    background-color: aqua;
+    margin:0 10px;
+    margin:auto;
+    display: flex;
+}
+.tele{
+   margin-left :35%;
+}
+.logo{
+    width:100px;
+}
+   
+ul{
+   margin-top:30px ;
+}
+
+ul li{
+    display:inline;
+    background-color: brown;
+    padding: 10px;     
+}
+h1{
+    font-size:larger;
+    margin-left:-300px;
+}
+#bg{
+    width:100%; 
+    height:63%;
+    position:absolute;
+}
+#row
+{
+    display:flex;  
+}
+.box{
+    justify-content: space-between;
+}
+#row .box .div{
+    z-index: 1;
+    border:1px solid ;
+    width: 30%;
+    justify-content:center;
+    padding:40px;
+}
+#row .box div button{
+    width:134%;
+    margin-left:-40px;
+    margin-bottom:-40px;
+}
+.div p{
+    line-height: 35px;
+    color: azure;
+}
+h2{
+    color: azure;
+}
+
+.div{
+    opacity:0.3;
+} 
+.div:hover{
+    opacity:1;
+}
+.tab
+{
+    display:flex;
+}
+.row{
+    display:grid;
+    grid-template-areas: "main main main main main sub1 sub1"
+    "main main main main main sub2 sub2"
+    "main main main main main sub3 sub3";
+}
+#sep img{
+    width:100px;  
+}
+.main{
+    grid-area:main;
+    width: 600px;
+    
+}
+.sub1{
+    grid-area:sub1;
+    border:1px solid;
+    width:400px;
+    display:flex;
+}
+.sub2{
+    grid-area:sub2;
+    width: 400px;
+    border:1px solid;
+    display: flex;
+}
+.sub3{
+    grid-area:sub3;
+    width: 400px;
+    border:1px solid;
+    display: flex;
+}
+#sep{
+    margin-left:80px;
+}
+#box{
+    display:grid;
+    grid-template-columns: auto auto;
+    grid-template-areas: "one one one two two two";
+}
+.one{
+    display:flex;
+    grid-area:one;
+    width: 100%;
+    height: 150px;
+   
+}
+.one p{
+
+    width:400px;
+   
+}
+.two{
+ 
+    display:flex;
+    grid-area:two;
+    width: 40%;
+    height: 150px;
+   
+
+}
+.two p{
+ 
+    width:900px;
+   
+}
+
+
+
+
