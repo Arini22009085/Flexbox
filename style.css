@@ -147,7 +147,7 @@ h2{
 }
 .num{
     display:flex;
-    background-color:greenyellow;
+    background-color:rgb(233, 255, 201);
 }
 #row{
     display:flex;
