@@ -1,49 +1,52 @@
 *{
-    box-sizing: border-box;
+    box-sizing:border-box;
 }
 body
 {
-    margin: 0;
+    margin:0;
 }
 img{
-    max-width: 100%;
+    max-width:100%;
 }
 .fluid,#fluid
 {
     width:100%;
-    background-color: rgb(194, 241, 21);
+}
+.header{
+    width:100%;
+    background-color:black;
+    color:white;
 }
 .box,#box
 {
     width:80%;
-    background-color: aqua;
     margin:0 10px;
     margin:auto;
     display: flex;
 }
 .tele{
-   margin-left :35%;
+   margin-left:35%;
 }
 .logo{
     width:100px;
-}
-   
-ul{
+} 
+nav ul{
    margin-top:30px ;
 }
-
-ul li{
+nav ul li{
     display:inline;
-    background-color: brown;
-    padding: 10px;     
+    padding:10px;     
 }
-h1{
+nav ul li:hover{
+    background-color:greenyellow;
+}
+.ari{
     font-size:larger;
     margin-left:-300px;
 }
 #bg{
     width:100%; 
-    height:63%;
+    height:400px;
     position:absolute;
 }
 #row
@@ -51,12 +54,12 @@ h1{
     display:flex;  
 }
 .box{
-    justify-content: space-between;
+    justify-content:space-between;
 }
 #row .box .div{
-    z-index: 1;
-    border:1px solid ;
-    width: 30%;
+    z-index:1;
+    border:1px solid;
+    width:30%;
     justify-content:center;
     padding:40px;
 }
@@ -64,15 +67,15 @@ h1{
     width:134%;
     margin-left:-40px;
     margin-bottom:-40px;
+    background-color:greenyellow;
 }
 .div p{
-    line-height: 35px;
-    color: azure;
+    line-height:35px;
+    color:azure;
 }
 h2{
-    color: azure;
+    color:azure;
 }
-
 .div{
     opacity:0.3;
 } 
@@ -85,7 +88,7 @@ h2{
 }
 .row{
     display:grid;
-    grid-template-areas: "main main main main main sub1 sub1"
+    grid-template-areas:"main main main main main sub1 sub1"
     "main main main main main sub2 sub2"
     "main main main main main sub3 sub3";
 }
@@ -94,8 +97,8 @@ h2{
 }
 .main{
     grid-area:main;
-    width: 600px;
-    
+    width:600px;
+    margin-bottom:70px;
 }
 .sub1{
     grid-area:sub1;
@@ -105,51 +108,65 @@ h2{
 }
 .sub2{
     grid-area:sub2;
-    width: 400px;
+    width:400px;
     border:1px solid;
-    display: flex;
+    display:flex;
 }
 .sub3{
     grid-area:sub3;
-    width: 400px;
+    width:400px;
     border:1px solid;
-    display: flex;
+    display:flex;
 }
 #sep{
     margin-left:80px;
 }
 #box{
     display:grid;
-    grid-template-columns: auto auto;
-    grid-template-areas: "one one one two two two";
+    grid-template-columns:auto auto;
+    grid-template-areas:"one one one two two two";
 }
 .one{
     display:flex;
     grid-area:one;
-    width: 100%;
-    height: 150px;
-   
+    width:100%;
+    height:150px; 
 }
 .one p{
-
-    width:400px;
-   
+    width:350px; 
 }
 .two{
- 
     display:flex;
     grid-area:two;
-    width: 40%;
-    height: 150px;
-   
-
+    width:40%;
+    height:150px;
+    margin-left:-205px;
 }
 .two p{
- 
     width:900px;
+}
+.num{
+    display:flex;
+    background-color:greenyellow;
+}
+#row{
+    display:flex;
+    justify-content:center;
+    justify-content:space-between;
+    margin-top:50px;
+}
+.col{
+    color:white;
+    width:33.33%
+}
+.col ul{
+    line-height:35px;
+    color:greenyellow;
    
 }
-
-
-
-
+form{
+    margin-bottom:20px;
+}
+button{
+    background-color:greenyellow;
+}
